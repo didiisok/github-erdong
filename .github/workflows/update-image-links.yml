@@ -63,7 +63,7 @@ jobs:
 
           for path in files:
               key = path.as_posix()
-              client.put_object_from_file(
+              client.put_object_from_local_file(
                   Bucket=bucket,
                   Key=key,
                   LocalFilePath=str(path),
