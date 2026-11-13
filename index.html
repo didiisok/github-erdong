@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>我的 GitHub 图床</title><style>
+<title>我的 GitHub 图床</title>
+<style>
 *{box-sizing:border-box}body{margin:0;padding:28px;background:#0b1020;color:#e8edf7;font:15px system-ui,-apple-system,"Segoe UI",sans-serif}
 header{max-width:1100px;margin:0 auto 24px}h1{font-size:26px;margin:0 0 8px}.sub{color:#9ba8bd}
 main{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
@@ -8,8 +9,12 @@ main{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(auto
 img{width:100%;height:170px;object-fit:contain;background:#0a0f1c;border-radius:9px}
 .name{margin:10px 0;overflow-wrap:anywhere;color:#dce5f5;font-size:13px}
 button{width:100%;border:0;border-radius:9px;padding:11px;background:#3478f6;color:white;font-weight:650;cursor:pointer}
-button.done{background:#16845b}
-</style></head><body><header><h1>我的 GitHub 图床</h1><div class="sub">自动生成图片直链 · 点击按钮复制</div></header>
-<main><article class="card"><img loading="lazy" src="https://raw.githubusercontent.com/didiisok/github-erdong/refs/heads/main/%E9%A9%AC%E8%B5%9B%E5%85%8B%E9%A3%8E%E6%A0%BC%E7%9A%84%E7%8E%8B%E8%80%85%E4%B8%8E%E7%9A%87%E5%86%A0%E5%B1%B1%E7%BE%8A.png" alt="马赛克风格的王者与皇冠山羊.png"><div class="name">马赛克风格的王者与皇冠山羊.png</div><button type="button" data-url="https://raw.githubusercontent.com/didiisok/github-erdong/refs/heads/main/%E9%A9%AC%E8%B5%9B%E5%85%8B%E9%A3%8E%E6%A0%BC%E7%9A%84%E7%8E%8B%E8%80%85%E4%B8%8E%E7%9A%87%E5%86%A0%E5%B1%B1%E7%BE%8A.png">复制直链</button></article></main>
-<script>document.querySelectorAll('button[data-url]').forEach(b=>b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(b.dataset.url);b.textContent='已复制 ✓';b.classList.add('done');setTimeout(()=>{b.textContent='复制直链';b.classList.remove('done')},1600)}catch(e){window.prompt('请复制图片直链：',b.dataset.url)}}));</script>
-</body></html>
+button.done{background:#16845b}.empty{grid-column:1/-1;color:#9ba8bd;padding:30px}
+</style></head><body><header><h1>我的 GitHub 图床</h1><div class="sub">自动生成图片直链 · 点击按钮复制</div></header><main>
+<article class="card"><img loading="lazy" src="https://img.ayudidiisokonline.top/%E9%A9%AC%E8%B5%9B%E5%85%8B%E9%A3%8E%E6%A0%BC%E7%9A%84%E7%8E%8B%E8%80%85%E4%B8%8E%E7%9A%87%E5%86%A0%E5%B1%B1%E7%BE%8A.png" alt="马赛克风格的王者与皇冠山羊.png"><div class="name">马赛克风格的王者与皇冠山羊.png</div><button type="button" data-url="https://img.ayudidiisokonline.top/%E9%A9%AC%E8%B5%9B%E5%85%8B%E9%A3%8E%E6%A0%BC%E7%9A%84%E7%8E%8B%E8%80%85%E4%B8%8E%E7%9A%87%E5%86%A0%E5%B1%B1%E7%BE%8A.png">复制直链</button></article>
+</main><script>
+document.querySelectorAll('button[data-url]').forEach(b=>b.addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(b.dataset.url);b.textContent='已复制 ✓';b.classList.add('done');setTimeout(()=>{b.textContent='复制直链';b.classList.remove('done')},1600)}
+  catch(e){window.prompt('请复制图片直链：',b.dataset.url)}
+}));
+</script></body></html>
